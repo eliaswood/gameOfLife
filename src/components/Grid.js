@@ -14,6 +14,7 @@ const Grid = ({ rows, cols, gridFull, selectBox }) => {
     for (let j = 0; j < cols; j += 1) {
       const boxId = `${i} ${j}`;
       boxClass = gridFull[i][j] ? "box on" : "box off";
+      // console.log(boxClass);
       rowsArr.push(
         <Box
           boxClass={boxClass}
